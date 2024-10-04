@@ -2,51 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-div{
-  background-color: aqua;
+.main-div {
+  background-color: #ffffff;
   display: flex;
-  height: 100px;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.nav-button {
+  border-radius: 25px;
+  background-color: #e0f7fa;
+  height: 45px;
+  padding: 0 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: #00796b;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.sub-div {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.main-div button{
-  border-radius: 5px;
-  background-color: beige;
-  height: 50px;
-  width: 150px;
-  align-items: center;
-  margin-top: 26px;
-  font-weight: bold;
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #004d40;
 }
 
-.main-div button:hover{
-  background-color: rgb(251, 251, 217);
-}
-
-.sub-div button{
-  background-color: aquamarine;
-  margin-bottom: 25px;
+.login-button {
   border-radius: 25px;
+  background-color: #ffd54f;
+  color: #bf360c;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
-.sub-div button:hover{
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-  background-color: rgb(142, 252, 215);
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+.login-button:hover {
+  background-color: #ffca28;
+  transform: scale(1.05);
 }
 
-.sub-div{
-  background-color: aquamarine;
-  width: 80%;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  gap: 180px;
+h1, h2 {
+  font-family: 'Arial', sans-serif;
 }
 
-.heading{
-  font-size: 40px;
-  font-weight: bolder;
+h1 {
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #34495e;
+}
+
+.text-center {
+  text-align: center;
 }
